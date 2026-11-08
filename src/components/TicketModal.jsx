@@ -218,10 +218,10 @@ export default function TicketModal({ isOpen, onClose, initialTier, bankroll, on
               {/* Confirm Payment Button */}
               <button
                 type="submit"
-                className="w-full py-4 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 border border-red-400/50"
+                className="w-full py-3 sm:py-4 px-3 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 border border-red-400/50"
               >
-                <CheckCircle2 className="w-6 h-6 text-amber-300" />
-                <span>I HAVE PAID VIA QR — GENERATE MY TICKET (₹{subtotal})</span>
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-amber-300" />
+                <span>I HAVE PAID VIA QR — GET TICKET (₹{subtotal})</span>
               </button>
 
             </form>

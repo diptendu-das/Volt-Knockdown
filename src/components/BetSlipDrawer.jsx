@@ -544,9 +544,9 @@ export default function BetSlipDrawer({
 
             <button
               onClick={handleProceedToPayment}
-              className="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-black font-teko text-2xl tracking-wider uppercase rounded-xl font-black shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all flex items-center justify-center gap-2"
+              className="w-full py-3 sm:py-3.5 px-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-black font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl font-black shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all flex items-center justify-center gap-2"
             >
-              <Smartphone className="w-6 h-6" />
+              <Smartphone className="w-5 h-5 sm:w-6 sm:h-6" />
               <span>SCAN UPI QR TO LOCK IN (₹{totalStake})</span>
             </button>
           </div>

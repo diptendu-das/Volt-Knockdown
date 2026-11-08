@@ -118,7 +118,7 @@ export default function Navbar({ bankroll, onResetBankroll, onOpenTickets, onOpe
         </nav>
 
         {/* Action CTAs */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {/* Bet Slip Launcher */}
           <button
             onClick={() => { soundFX.playClick(); onOpenBets(); }}
@@ -136,10 +136,11 @@ export default function Navbar({ bankroll, onResetBankroll, onOpenTickets, onOpe
           {/* Book Tickets Direct CTA */}
           <button
             onClick={() => { soundFX.playBell(); onOpenTickets(); }}
-            className="relative group overflow-hidden px-5 py-2.5 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-xl tracking-wider uppercase rounded-xl shadow-[0_0_20px_rgba(220,38,38,0.5)] transform active:scale-95 transition-all flex items-center gap-2 border border-red-400/50"
+            className="relative group overflow-hidden px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-sm sm:text-xl tracking-wider uppercase rounded-lg sm:rounded-xl shadow-[0_0_20px_rgba(220,38,38,0.5)] transform active:scale-95 transition-all flex items-center gap-1.5 sm:gap-2 border border-red-400/50 shrink-0"
           >
-            <Ticket className="w-5 h-5 text-amber-300" />
-            <span>BOOK TICKET (UPI QR)</span>
+            <Ticket className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
+            <span className="hidden sm:inline">BOOK TICKET (UPI QR)</span>
+            <span className="sm:hidden font-bold">TICKETS</span>
           </button>
         </div>
       </div>

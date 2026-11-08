@@ -191,16 +191,16 @@ export default function App() {
       />
 
       {/* Floating Bottom Quick Action Dock */}
-      <aside aria-label="Quick Actions" className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-zinc-950/95 backdrop-blur-lg border border-red-500/50 rounded-full px-4 py-2 shadow-[0_0_30px_rgba(0,0,0,0.85)] flex items-center gap-3">
+      <aside aria-label="Quick Actions" className="fixed bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 z-40 bg-zinc-950/95 backdrop-blur-lg border border-red-500/50 rounded-full px-2 sm:px-4 py-1.5 sm:py-2 shadow-[0_0_30px_rgba(0,0,0,0.85)] flex items-center gap-2 sm:gap-3 w-[92%] sm:w-auto max-w-md justify-between sm:justify-center">
         <button
           onClick={() => {
             soundFX.playBell();
             handleOpenTickets(TICKET_TIERS[0]);
           }}
-          className="px-4 py-2 bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 text-white font-teko text-lg tracking-wider uppercase rounded-full shadow-[0_0_15px_rgba(220,38,38,0.5)] flex items-center gap-1.5 transition-all"
+          className="flex-1 sm:flex-none px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 text-white font-teko text-sm sm:text-lg tracking-wider uppercase rounded-full shadow-[0_0_15px_rgba(220,38,38,0.5)] flex items-center justify-center gap-1.5 transition-all"
         >
-          <Ticket className="w-4 h-4 text-amber-300" />
-          <span>BOOK TICKET (UPI QR)</span>
+          <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300" />
+          <span>BOOK TICKET</span>
         </button>
 
         <button
@@ -208,9 +208,9 @@ export default function App() {
             soundFX.playClick();
             setIsBetSlipOpen(true);
           }}
-          className="px-4 py-2 bg-zinc-900 hover:bg-zinc-800 text-amber-400 border border-amber-500/40 font-teko text-lg tracking-wider uppercase rounded-full flex items-center gap-1.5 transition-all"
+          className="flex-1 sm:flex-none px-3 sm:px-4 py-1.5 sm:py-2 bg-zinc-900 hover:bg-zinc-800 text-amber-400 border border-amber-500/40 font-teko text-sm sm:text-lg tracking-wider uppercase rounded-full flex items-center justify-center gap-1.5 transition-all"
         >
-          <DollarSign className="w-4 h-4 text-amber-400" />
+          <DollarSign className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400" />
           <span>BETSLIP {selectedBets.length > 0 && `(${selectedBets.length})`}</span>
         </button>
       </aside>

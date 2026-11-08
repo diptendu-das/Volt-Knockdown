@@ -147,29 +147,29 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
 
         {/* INDIVIDUAL FIGHTER DOSSIER */}
         <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 sm:p-8">
-          <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center gap-2 sm:gap-4 mb-8">
             <button
               onClick={() => { soundFX.playClick(); setActiveFighter('arman'); }}
-              className={`px-6 py-2.5 rounded-xl font-teko text-2xl tracking-wider uppercase transition-all flex items-center gap-2 ${
+              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${
                 activeFighter === 'arman'
                   ? 'bg-red-600 text-white shadow-[0_0_20px_rgba(220,38,38,0.6)]'
                   : 'bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800'
               }`}
             >
-              <Flame className="w-5 h-5 text-amber-300" />
-              ARMAN (6'7" TITAN) DOSSIER
+              <Flame className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
+              <span>ARMAN (6'7")</span>
             </button>
 
             <button
               onClick={() => { soundFX.playClick(); setActiveFighter('srichandan'); }}
-              className={`px-6 py-2.5 rounded-xl font-teko text-2xl tracking-wider uppercase transition-all flex items-center gap-2 ${
+              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${
                 activeFighter === 'srichandan'
                   ? 'bg-sky-600 text-white shadow-[0_0_20px_rgba(14,165,233,0.6)]'
                   : 'bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800'
               }`}
             >
-              <Zap className="w-5 h-5 text-amber-300" />
-              SRICHANDAN (4'0" DYNAMO) DOSSIER
+              <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
+              <span>SRICHANDAN (4'0")</span>
             </button>
           </div>
 

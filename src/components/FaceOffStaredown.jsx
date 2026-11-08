@@ -171,9 +171,9 @@ export default function FaceOffStaredown() {
 
               <button
                 onClick={triggerMaxTension}
-                className="px-4 py-2 bg-red-600/80 hover:bg-red-600 text-white font-teko text-lg tracking-wider uppercase rounded-lg border border-red-400 transition-all shadow-[0_0_15px_rgba(220,38,38,0.4)] whitespace-nowrap"
+                className="w-full sm:w-auto px-4 py-2 bg-red-600/80 hover:bg-red-600 text-white font-teko text-base sm:text-lg tracking-wider uppercase rounded-lg border border-red-400 transition-all shadow-[0_0_15px_rgba(220,38,38,0.4)] flex items-center justify-center gap-1.5"
               >
-                💥 TRIGGER MAXIMUM CHAOS
+                <span>💥 TRIGGER MAXIMUM CHAOS</span>
               </button>
             </div>
           </div>

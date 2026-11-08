@@ -167,11 +167,11 @@ export default function TicketSection({ onOpenBookingModal }) {
                 soundFX.playBell();
                 onOpenBookingModal(selectedTier);
               }}
-              className="w-full py-4 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-3 border border-red-400/50"
+              className="w-full py-3 sm:py-4 px-3 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 sm:gap-3 border border-red-400/50"
             >
-              <Smartphone className="w-6 h-6 text-amber-300" />
-              <span>PAY & BOOK VIA PHONEPE QR (₹{selectedTier.price})</span>
-              <ArrowRight className="w-6 h-6" />
+              <Smartphone className="w-5 h-5 sm:w-6 sm:h-6 text-amber-300" />
+              <span>PAY & BOOK VIA QR (₹{selectedTier.price})</span>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
 

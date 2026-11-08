@@ -218,13 +218,13 @@ export default function BettingSection({ onAddToBetSlip, selectedBetIds, onOpenB
         </div>
 
         {/* Bottom CTA to open Betslip */}
-        <div className="mt-12 text-center">
+        <div className="mt-10 sm:mt-12 text-center px-2">
           <button
             onClick={() => { soundFX.playClick(); onOpenBets(); }}
-            className="px-8 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-black font-teko text-2xl tracking-wider uppercase rounded-xl font-bold shadow-[0_0_25px_rgba(245,158,11,0.4)] transition-all inline-flex items-center gap-2"
+            className="w-full sm:w-auto px-4 sm:px-8 py-3 sm:py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-black font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl font-bold shadow-[0_0_25px_rgba(245,158,11,0.4)] transition-all inline-flex items-center justify-center gap-2"
           >
             <Smartphone className="w-5 h-5" />
-            <span>OPEN BETSLIP & PAY VIA PHONEPE QR</span>
+            <span>OPEN BETSLIP & PAY VIA QR</span>
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>

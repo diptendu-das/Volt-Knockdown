@@ -225,12 +225,10 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
                   });
                   onOpenBets();
                 }}
-                className="w-full py-2 sm:py-3 px-2 sm:px-3 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-base sm:text-2xl tracking-wider uppercase rounded-lg sm:rounded-xl transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)] flex items-center justify-between border border-red-400/50"
+                className="w-full py-2 sm:py-2.5 px-1.5 sm:px-3 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-sm sm:text-xl tracking-wider uppercase rounded-lg sm:rounded-xl transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)] flex items-center justify-center gap-1 sm:gap-2 border border-red-400/50"
               >
                 <span className="truncate">BET ARMAN</span>
-                <span className="bg-black/50 font-mono text-[11px] sm:text-sm font-bold px-1.5 sm:px-2 py-0.5 rounded text-amber-300">
-                  {FIGHTERS.red.odds.moneyline}
-                </span>
+                <span className="font-mono text-[10px] sm:text-xs font-bold text-amber-300">({FIGHTERS.red.odds.moneyline})</span>
               </button>
             </div>
           </div>
@@ -319,12 +317,10 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
                   });
                   onOpenBets();
                 }}
-                className="w-full py-2 sm:py-3 px-2 sm:px-3 bg-gradient-to-r from-sky-600 via-blue-600 to-sky-700 hover:from-sky-500 text-white font-teko text-base sm:text-2xl tracking-wider uppercase rounded-lg sm:rounded-xl transition-all shadow-[0_0_15px_rgba(14,165,233,0.3)] flex items-center justify-between border border-sky-400/50"
+                className="w-full py-2 sm:py-2.5 px-1.5 sm:px-3 bg-gradient-to-r from-sky-600 via-blue-600 to-sky-700 hover:from-sky-500 text-white font-teko text-sm sm:text-xl tracking-wider uppercase rounded-lg sm:rounded-xl transition-all shadow-[0_0_15px_rgba(14,165,233,0.3)] flex items-center justify-center gap-1 sm:gap-2 border border-sky-400/50"
               >
                 <span className="truncate">BET SRICHANDAN</span>
-                <span className="bg-black/50 font-mono text-[11px] sm:text-sm font-bold px-1.5 sm:px-2 py-0.5 rounded text-amber-300">
-                  +{FIGHTERS.blue.odds.moneyline}
-                </span>
+                <span className="font-mono text-[10px] sm:text-xs font-bold text-amber-300">(+{FIGHTERS.blue.odds.moneyline})</span>
               </button>
             </div>
           </div>
@@ -363,17 +359,17 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
           </div>
 
           {/* Action Bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4 sm:mt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 mt-4 sm:mt-6">
             <button
               onClick={() => {
                 soundFX.playBell();
                 onOpenTickets();
               }}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-xl sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 border border-red-400/50"
+              className="w-full sm:w-auto px-4 sm:px-8 py-2.5 sm:py-3.5 bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 text-white font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_25px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 border border-red-400/50"
             >
-              <Trophy className="w-5 h-5 text-amber-300" />
+              <Trophy className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
               <span>BOOK SEMINAR SEAT (SCAN QR)</span>
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             <button
@@ -381,9 +377,9 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
                 soundFX.playClick();
                 onOpenBets();
               }}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-zinc-900 hover:bg-zinc-800 text-amber-400 border border-amber-500/60 font-teko text-xl sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-4 sm:px-8 py-2.5 sm:py-3.5 bg-zinc-900 hover:bg-zinc-800 text-amber-400 border border-amber-500/60 font-teko text-lg sm:text-2xl tracking-wider uppercase rounded-xl shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all flex items-center justify-center gap-2"
             >
-              <Zap className="w-5 h-5 text-amber-400" />
+              <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />
               <span>EXPLORE ALL BANTER BETS</span>
             </button>
           </div>

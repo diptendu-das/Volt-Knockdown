@@ -69,65 +69,65 @@ export default function BanterSoundboard() {
         </div>
 
         {/* Grid of Soundboard Buttons */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-8 sm:mb-10">
           <button
             onClick={() => playBanterSound(1, 'bell')}
-            className={`p-4 rounded-xl border text-center transition-all ${
+            className={`p-2.5 sm:p-4 rounded-xl border text-center transition-all ${
               playingId === 1 
                 ? 'bg-amber-500 text-black border-amber-400 scale-95' 
                 : 'bg-zinc-950 border-zinc-800 hover:border-amber-500/60 text-white'
             }`}
           >
-            <span className="text-3xl block mb-1">🔔</span>
-            <span className="font-teko text-xl font-bold tracking-wider uppercase block">
+            <span className="text-2xl sm:text-3xl block mb-1">🔔</span>
+            <span className="font-teko text-base sm:text-xl font-bold tracking-wider uppercase block leading-tight">
               1:00 PM WAR BELL
             </span>
-            <span className="text-[10px] font-mono text-zinc-400">Lunch Break Stoppage</span>
+            <span className="text-[9px] sm:text-[10px] font-mono text-zinc-400">Lunch Break Stoppage</span>
           </button>
 
           <button
             onClick={() => playBanterSound(2, 'impact')}
-            className={`p-4 rounded-xl border text-center transition-all ${
+            className={`p-2.5 sm:p-4 rounded-xl border text-center transition-all ${
               playingId === 2 
                 ? 'bg-red-600 text-white border-red-400 scale-95 shadow-[0_0_20px_rgba(220,38,38,0.8)]' 
                 : 'bg-zinc-950 border-zinc-800 hover:border-red-500/60 text-white'
             }`}
           >
-            <span className="text-3xl block mb-1">💥</span>
-            <span className="font-teko text-xl font-bold tracking-wider uppercase block">
+            <span className="text-2xl sm:text-3xl block mb-1">💥</span>
+            <span className="font-teko text-base sm:text-xl font-bold tracking-wider uppercase block leading-tight">
               ARMAN'S 6'7" SLAM
             </span>
-            <span className="text-[10px] font-mono text-zinc-400">Blackboard Shaker</span>
+            <span className="text-[9px] sm:text-[10px] font-mono text-zinc-400">Blackboard Shaker</span>
           </button>
 
           <button
             onClick={() => playBanterSound(3, 'cash')}
-            className={`p-4 rounded-xl border text-center transition-all ${
+            className={`p-2.5 sm:p-4 rounded-xl border text-center transition-all ${
               playingId === 3 
                 ? 'bg-emerald-500 text-black border-emerald-400 scale-95' 
                 : 'bg-zinc-950 border-zinc-800 hover:border-emerald-500/60 text-white'
             }`}
           >
-            <span className="text-3xl block mb-1">🥟</span>
-            <span className="font-teko text-xl font-bold tracking-wider uppercase block">
+            <span className="text-2xl sm:text-3xl block mb-1">🥟</span>
+            <span className="font-teko text-base sm:text-xl font-bold tracking-wider uppercase block leading-tight">
               SAMOSA ESCROW DING
             </span>
-            <span className="text-[10px] font-mono text-zinc-400">UPI PhonePe Paid</span>
+            <span className="text-[9px] sm:text-[10px] font-mono text-zinc-400">UPI PhonePe Paid</span>
           </button>
 
           <button
             onClick={() => playBanterSound(4, 'click')}
-            className={`p-4 rounded-xl border text-center transition-all ${
+            className={`p-2.5 sm:p-4 rounded-xl border text-center transition-all ${
               playingId === 4 
                 ? 'bg-sky-500 text-black border-sky-400 scale-95' 
                 : 'bg-zinc-950 border-zinc-800 hover:border-sky-500/60 text-white'
             }`}
           >
-            <span className="text-3xl block mb-1">🏃‍♂️</span>
-            <span className="font-teko text-xl font-bold tracking-wider uppercase block">
+            <span className="text-2xl sm:text-3xl block mb-1">🏃‍♂️</span>
+            <span className="font-teko text-base sm:text-xl font-bold tracking-wider uppercase block leading-tight">
               SRICHANDAN ESCAPE
             </span>
-            <span className="text-[10px] font-mono text-zinc-400">Corridor Sprint</span>
+            <span className="text-[9px] sm:text-[10px] font-mono text-zinc-400">Corridor Sprint</span>
           </button>
         </div>
 
