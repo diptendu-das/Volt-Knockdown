@@ -30,7 +30,7 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
   return (
     <section id="tale-of-the-tape" className="relative py-20 bg-[#09090e] border-y border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-zinc-900 border border-red-500/30 text-zinc-300 text-xs font-mono tracking-widest uppercase mb-3">
@@ -41,7 +41,7 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
             TALE OF THE <span className="text-red-500">TAPE</span>
           </h2>
           <p className="font-barlow text-lg text-zinc-400 mt-2">
-            The School of Electrical's biggest statistical mismatch. Compare 6'7" Arman's crushing stats vs 4'0" Srichandan's survival chances.
+            The School of Electrical's biggest statistical mismatch. Compare 6'7" Arman's crushing stats vs 5'4" Srichandan's survival chances.
           </p>
         </div>
 
@@ -61,14 +61,14 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
               <span className="text-xs font-mono text-sky-400 bg-sky-950 px-2 py-0.5 rounded border border-sky-800">
                 +{FIGHTERS.blue.odds.moneyline}
               </span>
-              <span>SRICHANDAN (4'0")</span>
+              <span>SRICHANDAN (5'4")</span>
             </div>
           </div>
 
           <div className="divide-y divide-zinc-900">
             {physicalMetrics.map((m, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="grid grid-cols-3 p-4 items-center hover:bg-zinc-900/40 transition-colors text-center"
               >
                 {/* Arman Value */}
@@ -107,7 +107,7 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                 <span className="w-3 h-3 bg-red-600 rounded"></span> ARMAN (6'7")
               </span>
               <span className="flex items-center gap-2 text-sky-400 font-bold">
-                <span className="w-3 h-3 bg-sky-500 rounded"></span> SRICHANDAN (4'0")
+                <span className="w-3 h-3 bg-sky-500 rounded"></span> SRICHANDAN (5'4")
               </span>
             </div>
           </div>
@@ -124,13 +124,13 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                 {/* Comparative progress bar */}
                 <div className="grid grid-cols-2 gap-2 h-3.5 bg-zinc-900 rounded-full p-0.5 border border-zinc-800 overflow-hidden">
                   <div className="flex justify-end">
-                    <div 
+                    <div
                       className="h-full bg-gradient-to-l from-red-600 to-rose-700 rounded-l-full transition-all duration-1000 shadow-[0_0_10px_rgba(220,38,38,0.5)]"
                       style={{ width: `${stat.red}%` }}
                     ></div>
                   </div>
                   <div className="flex justify-start">
-                    <div 
+                    <div
                       className="h-full bg-gradient-to-r from-sky-500 to-blue-600 rounded-r-full transition-all duration-1000 shadow-[0_0_10px_rgba(14,165,233,0.5)]"
                       style={{ width: `${stat.blue}%` }}
                     ></div>
@@ -150,11 +150,10 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
           <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center gap-2 sm:gap-4 mb-8">
             <button
               onClick={() => { soundFX.playClick(); setActiveFighter('arman'); }}
-              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${
-                activeFighter === 'arman'
+              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${activeFighter === 'arman'
                   ? 'bg-red-600 text-white shadow-[0_0_20px_rgba(220,38,38,0.6)]'
                   : 'bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800'
-              }`}
+                }`}
             >
               <Flame className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
               <span>ARMAN (6'7")</span>
@@ -162,14 +161,13 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
 
             <button
               onClick={() => { soundFX.playClick(); setActiveFighter('srichandan'); }}
-              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${
-                activeFighter === 'srichandan'
+              className={`px-2 sm:px-6 py-2 sm:py-2.5 rounded-xl font-teko text-base sm:text-2xl tracking-wider uppercase transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${activeFighter === 'srichandan'
                   ? 'bg-sky-600 text-white shadow-[0_0_20px_rgba(14,165,233,0.6)]'
                   : 'bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800'
-              }`}
+                }`}
             >
               <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
-              <span>SRICHANDAN (4'0")</span>
+              <span>SRICHANDAN (5'4")</span>
             </button>
           </div>
 
@@ -201,9 +199,8 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                 </div>
                 {fighter.strengths.map((str, idx) => (
                   <div key={idx} className="flex items-start gap-2.5 text-xs font-sans text-zinc-300">
-                    <CheckCircle2 className={`w-4 h-4 shrink-0 mt-0.5 ${
-                      activeFighter === 'arman' ? 'text-red-500' : 'text-sky-400'
-                    }`} />
+                    <CheckCircle2 className={`w-4 h-4 shrink-0 mt-0.5 ${activeFighter === 'arman' ? 'text-red-500' : 'text-sky-400'
+                      }`} />
                     <span>{str}</span>
                   </div>
                 ))}
@@ -216,11 +213,10 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                 <span className="font-mono text-xs text-zinc-400 uppercase tracking-wider font-bold">
                   RECENT CAMPUS RECORDS
                 </span>
-                <span className={`text-xs font-mono px-2 py-0.5 rounded border ${
-                  activeFighter === 'arman' 
-                    ? 'text-emerald-400 bg-emerald-950 border-emerald-800' 
+                <span className={`text-xs font-mono px-2 py-0.5 rounded border ${activeFighter === 'arman'
+                    ? 'text-emerald-400 bg-emerald-950 border-emerald-800'
                     : 'text-amber-400 bg-amber-950 border-amber-800'
-                }`}>
+                  }`}>
                   {activeFighter === 'arman' ? '48-0 UNDEFEATED' : '0-47 SURVIVOR'}
                 </span>
               </div>
@@ -233,9 +229,8 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                       <div className="text-sm font-bold text-white mt-0.5">{fight.opponent}</div>
                     </div>
                     <div className="text-right">
-                      <span className={`text-xs font-mono font-bold block ${
-                        fight.result.includes('WIN') ? 'text-emerald-400' : fight.result.includes('DRAW') ? 'text-amber-400' : 'text-red-400'
-                      }`}>
+                      <span className={`text-xs font-mono font-bold block ${fight.result.includes('WIN') ? 'text-emerald-400' : fight.result.includes('DRAW') ? 'text-amber-400' : 'text-red-400'
+                        }`}>
                         {fight.result}
                       </span>
                     </div>
@@ -256,11 +251,10 @@ export default function TaleOfTheTape({ onSelectFighterBet, onOpenBets }) {
                   });
                   onOpenBets();
                 }}
-                className={`w-full mt-5 py-3 rounded-xl font-teko text-xl tracking-wider uppercase transition-all flex items-center justify-center gap-2 ${
-                  activeFighter === 'arman'
+                className={`w-full mt-5 py-3 rounded-xl font-teko text-xl tracking-wider uppercase transition-all flex items-center justify-center gap-2 ${activeFighter === 'arman'
                     ? 'bg-red-600 hover:bg-red-500 text-white shadow-[0_0_20px_rgba(220,38,38,0.4)]'
                     : 'bg-sky-600 hover:bg-sky-500 text-white shadow-[0_0_20px_rgba(14,165,233,0.4)]'
-                }`}
+                  }`}
               >
                 <Award className="w-5 h-5 text-amber-300" />
                 <span>BET ON {fighter.lastName} ({fighter.odds.moneyline > 0 ? `+${fighter.odds.moneyline}` : fighter.odds.moneyline})</span>

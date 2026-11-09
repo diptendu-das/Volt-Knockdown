@@ -144,11 +144,11 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
       {/* THE TITANS FACE-OFF SECTION: SIDE-BY-SIDE EVEN ON MOBILE SCREENS (grid-cols-2 ALWAYS) */}
       <div className="relative z-20 max-w-7xl mx-auto px-2 sm:px-4 w-full my-auto">
         <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 items-stretch">
-          
+
           {/* RED CORNER: ARMAN (6'7" HEAVYWEIGHT MONSTER) */}
           <div className="relative group flex flex-col">
             <div className="relative h-full p-2.5 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-gradient-to-br from-red-950/70 via-zinc-950/95 to-zinc-950 border sm:border-2 border-red-500 shadow-[0_0_30px_rgba(220,38,38,0.35)] flex flex-col justify-between">
-              
+
               {/* Header Badges */}
               <div>
                 <div className="flex items-center justify-between mb-1 sm:mb-2">
@@ -174,8 +174,8 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
 
               {/* Fighter Photo */}
               <div className="relative my-2 sm:my-3 h-36 sm:h-56 md:h-72 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-t from-red-950 via-black to-zinc-900 border border-red-500/60 shadow-lg flex items-center justify-center">
-                <img 
-                  src="./arman.jpg" 
+                <img
+                  src="./arman.jpg"
                   alt="Arman The Behemoth"
                   className="w-full h-full object-cover object-top filter brightness-105 contrast-110"
                 />
@@ -236,7 +236,7 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
           {/* BLUE CORNER: SRICHANDAN (4'0" DYNAMO WITH 5 SOLID WINS) */}
           <div className="relative group flex flex-col">
             <div className="relative h-full p-2.5 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-gradient-to-bl from-sky-950/50 via-zinc-950/95 to-zinc-950 border sm:border-2 border-sky-500 shadow-[0_0_30px_rgba(14,165,233,0.35)] flex flex-col justify-between">
-              
+
               {/* Header Badges */}
               <div>
                 <div className="flex items-center justify-between mb-1 sm:mb-2">
@@ -249,7 +249,7 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
                 {/* Fighter Name - CLEAN HEADING without long tag */}
                 <div className="space-y-0.5">
                   <div className="text-sky-400 font-mono text-[9px] sm:text-xs font-extrabold uppercase truncate">
-                    4'0" DYNAMO
+                    5'4" DYNAMO
                   </div>
                   <h2 className="font-teko text-2xl sm:text-5xl md:text-6xl font-black text-white tracking-wider leading-none truncate">
                     {FIGHTERS.blue.firstName}
@@ -262,20 +262,20 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
 
               {/* Fighter Avatar & 5 Wins Showcase */}
               <div className="relative my-2 sm:my-3 h-36 sm:h-56 md:h-72 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-t from-sky-950 via-black to-zinc-900 border border-sky-500/50 shadow-lg flex flex-col items-center justify-center p-2 text-center">
-                
+
                 {/* 4-Foot Avatar */}
                 <div className="my-auto flex flex-col items-center justify-center scale-90 sm:scale-100">
                   <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-sky-500/20 border-2 border-sky-400 flex items-center justify-center text-2xl sm:text-4xl mb-1 sm:mb-2 animate-bounce">
                     ⚡
                   </div>
                   <div className="font-mono text-[9px] sm:text-xs text-sky-200 font-bold bg-black/80 px-2 sm:px-3 py-0.5 rounded border border-sky-500/40">
-                    HEIGHT: 4'0" (122 CM)
+                    HEIGHT: 5'4" (162 CM)
                   </div>
                 </div>
 
                 {/* Overlays */}
                 <div className="absolute top-1.5 left-1.5 bg-sky-600/90 text-white px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-xs font-mono font-black shadow">
-                  4'0" (122 CM)
+                  5'4" (162 CM)
                 </div>
                 <div className="absolute top-1.5 right-1.5 bg-black/80 border border-sky-500/60 px-1.5 sm:px-2 py-0.5 rounded text-[8px] sm:text-[11px] font-mono text-sky-300 font-bold">
                   5 WINS • 4 KOs
@@ -310,7 +310,7 @@ export default function Hero({ onOpenTickets, onSelectFighterBet, onOpenBets }) 
                   soundFX.playCash();
                   onSelectFighterBet({
                     id: 'ml-srichandan',
-                    name: "Srichandan (The 4-Foot Dynamo)",
+                    name: "Srichandan (The Big-Foot Dynamo)",
                     odds: FIGHTERS.blue.odds.moneyline,
                     decimal: FIGHTERS.blue.odds.decimal,
                     category: 'Match Winner (Moneyline)'

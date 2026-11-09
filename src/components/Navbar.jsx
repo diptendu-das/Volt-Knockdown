@@ -40,13 +40,12 @@ export default function Navbar({ bankroll, onResetBankroll, onOpenTickets, onOpe
             </button>
           </div>
 
-          <button 
+          <button
             onClick={toggleSound}
-            className={`flex items-center gap-1.5 px-2 py-0.5 rounded border transition-colors ${
-              isMuted 
-                ? 'border-zinc-700 text-zinc-500 hover:text-zinc-300' 
-                : 'border-red-600/40 text-red-400 hover:bg-red-950/40'
-            }`}
+            className={`flex items-center gap-1.5 px-2 py-0.5 rounded border transition-colors ${isMuted
+              ? 'border-zinc-700 text-zinc-500 hover:text-zinc-300'
+              : 'border-red-600/40 text-red-400 hover:bg-red-950/40'
+              }`}
             title="Toggle Sound Effects"
           >
             {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5 animate-pulse" />}
@@ -75,36 +74,36 @@ export default function Navbar({ bankroll, onResetBankroll, onOpenTickets, onOpe
               </span>
             </div>
             <span className="text-[10px] font-mono tracking-widest text-amber-400 uppercase -mt-0.5">
-              ARMAN (6'7") VS SRICHANDAN (4'0")
+              ARMAN (6'7") VS SRICHANDAN (5'4")
             </span>
           </div>
         </a>
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-8">
-          <a 
-            href="#main-event" 
+          <a
+            href="#main-event"
             onClick={() => soundFX.playClick()}
             className="font-barlow text-sm uppercase tracking-widest font-bold text-zinc-300 hover:text-red-400 transition-colors"
           >
             The Matchup
           </a>
-          <a 
-            href="#tale-of-the-tape" 
+          <a
+            href="#tale-of-the-tape"
             onClick={() => soundFX.playClick()}
             className="font-barlow text-sm uppercase tracking-widest font-bold text-zinc-300 hover:text-red-400 transition-colors"
           >
-            6'7" vs 4'0" Stats
+            6'7" vs 5'4" Stats
           </a>
-          <a 
-            href="#tickets" 
+          <a
+            href="#tickets"
             onClick={() => soundFX.playClick()}
             className="font-barlow text-sm uppercase tracking-widest font-bold text-zinc-300 hover:text-red-400 transition-colors"
           >
             Seminar Tickets
           </a>
-          <a 
-            href="#betting" 
+          <a
+            href="#betting"
             onClick={() => soundFX.playClick()}
             className="font-barlow text-sm uppercase tracking-widest font-bold text-zinc-300 hover:text-amber-400 transition-colors flex items-center gap-1.5"
           >
